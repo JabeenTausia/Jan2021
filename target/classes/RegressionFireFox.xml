@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+<parameter name="BrowserName" value="firefox"/>
+	<test name="login">
+		<classes>
+			<class name="com.training.testcases.login.LoginTest" />
+		</classes>
+	</test>
+	
+</suite>
