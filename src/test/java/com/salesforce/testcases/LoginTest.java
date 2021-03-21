@@ -1,4 +1,4 @@
-package com.training.testcases.login;
+package com.salesforce.testcases;
 
 import org.testng.annotations.Test;
 
@@ -48,18 +48,9 @@ public class LoginTest extends TrainingBaseTest {
 		login.enterIntoUsername("jab@tek.com");
 		login.enterIntoPassword("Testing@1");
 		login.clickonLogin();
-		homePage.validateText("Setup");
+		//homePage.validateText("Setup");
 		homePage.clickSetup();
 
-	}
-
-	// Login To SalesForce -2
-	@Test(priority = 1, enabled = false)
-	public void tc02_loginintosalesandvalidatePageTitle() throws InterruptedException {
-		login.enterIntoUsername("jab@tek.com");
-		login.enterIntoPassword("Testing@1");
-		login.clickonLogin();
-		homePage.verifyTitle("Home Page ~ Salesforce - Developer Edition");
 	}
 
 	// Login Error Message - 1
@@ -69,6 +60,16 @@ public class LoginTest extends TrainingBaseTest {
 		login.validateErrorMessage("Please enter your password.");
 
 	}
+	
+	// Login To SalesForce -2
+		@Test(priority = 1, enabled = false)
+		public void tc02_loginintosalesandvalidatePageTitle() throws InterruptedException {
+			login.enterIntoUsername("jab@tek.com");
+			login.enterIntoPassword("Testing@1");
+			login.clickonLogin();
+			homePage.verifyTitle("Home Page ~ Salesforce - Developer Edition");
+		}
+
 
 	// Check RemeberMe - 3
 	@Test(priority = 1, enabled = false)
@@ -84,7 +85,7 @@ public class LoginTest extends TrainingBaseTest {
 	}
 
 	// Forgot Password-wrong password- 4 B
-	@Test(priority = 1, enabled = true)
+	@Test(priority = 1, enabled = false)
 	public void tc04_forgotPassError() throws InterruptedException {
 		login.enterIntoUsername("he234@tek.com");
 		login.wrongPassErrorMessage(

@@ -5,7 +5,8 @@
 	<parameter name="BrowserName" value="chrome"/>
 		<classes>
 			
-			<class name="com.training.testcases.login.LoginTest" />
+	
+			<class name="com.salesforce.testcases.AccountsTest" />
 		</classes>
 	</test>
 </suite>

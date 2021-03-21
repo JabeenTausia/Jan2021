@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="4" total="5" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression Suite" duration-ms="14454" started-at="2021-03-17T22:38:39Z" finished-at="2021-03-17T22:38:54Z">
+  <suite name="Regression Suite" duration-ms="17044" started-at="2021-03-21T06:43:48Z" finished-at="2021-03-21T06:44:05Z">
     <groups>
     </groups>
-    <test name="SaleforceTests" duration-ms="14454" started-at="2021-03-17T22:38:39Z" finished-at="2021-03-17T22:38:54Z">
-      <class name="com.training.testcases.login.LoginTest">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.training.testcases.login.LoginTest@d8355a8]" name="beforeTest" is-config="true" duration-ms="4399" started-at="2021-03-17T15:38:39Z" finished-at="2021-03-17T15:38:44Z">
+    <test name="SaleforceTests" duration-ms="17044" started-at="2021-03-21T06:43:48Z" finished-at="2021-03-21T06:44:05Z">
+      <class name="com.salesforce.testcases.AccountsTest">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:com.salesforce.testcases.AccountsTest@d8355a8]" name="beforeTest" is-config="true" duration-ms="3332" started-at="2021-03-20T23:43:48Z" finished-at="2021-03-20T23:43:51Z">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="tc04_forgotPassError()[pri:1, instance:com.training.testcases.login.LoginTest@d8355a8]" name="tc04_forgotPassError" duration-ms="9795" started-at="2021-03-17T15:38:44Z" finished-at="2021-03-17T15:38:54Z">
+        <test-method status="PASS" signature="tc10_validateCreateAccount()[pri:0, instance:com.salesforce.testcases.AccountsTest@d8355a8]" name="tc10_validateCreateAccount" duration-ms="13523" started-at="2021-03-20T23:43:51Z" finished-at="2021-03-20T23:44:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc04_forgotPassError -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.training.testcases.login.LoginTest@d8355a8]" name="afterSuite" is-config="true" duration-ms="229" started-at="2021-03-17T15:38:54Z" finished-at="2021-03-17T15:38:54Z">
+        </test-method> <!-- tc10_validateCreateAccount -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.salesforce.testcases.AccountsTest@d8355a8]" name="afterSuite" is-config="true" duration-ms="164" started-at="2021-03-20T23:44:05Z" finished-at="2021-03-20T23:44:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.training.testcases.login.LoginTest -->
+      </class> <!-- com.salesforce.testcases.AccountsTest -->
     </test> <!-- SaleforceTests -->
   </suite> <!-- Regression Suite -->
 </testng-results>

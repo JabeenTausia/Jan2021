@@ -5,7 +5,7 @@
     <classes>
       <class name="com.training.testcases.login.LoginTest">
         <methods>
-          <include name="validateErrorLoginScreen"/>
+          <include name="tc04_forgotPassError"/>
         </methods>
       </class> <!-- com.training.testcases.login.LoginTest -->
     </classes>

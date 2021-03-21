@@ -18,7 +18,9 @@ public class LoginPage extends TrainingBasePage {
 
 	public LoginPage(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
+		this.driver = driver;
+        
+        PageFactory.initElements(driver,this);
 	}
 
 	@FindBy(xpath = "//input[@id='username']")

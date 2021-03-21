@@ -4,13 +4,13 @@
   <test name="SaleforceTests(failed)">
     <parameter name="BrowserName" value="chrome"/>
     <classes>
-      <class name="com.training.testcases.login.LoginTest">
+      <class name="com.salesforce.testcases.AccountsTest">
         <methods>
-          <include name="tc03_validateRememberMe"/>
+          <include name="tc10_validateCreateAccount"/>
           <include name="beforeTest"/>
           <include name="afterSuite"/>
         </methods>
-      </class> <!-- com.training.testcases.login.LoginTest -->
+      </class> <!-- com.salesforce.testcases.AccountsTest -->
     </classes>
   </test> <!-- SaleforceTests(failed) -->
 </suite> <!-- Failed suite [Regression Suite] -->

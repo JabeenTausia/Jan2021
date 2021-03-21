@@ -1,5 +1,7 @@
 package com.training.base;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -70,5 +72,15 @@ public class TrainingBasePage {
 		Assert.assertEquals(actual, expected);
 		
 	}
+    
+    public void UserMenulistItemCheck(WebElement element, List<WebElement> userMenu, int expected) {
+    	element.click();
+    	for(WebElement list: userMenu) {
+    		System.out.println(list.getText());
+    		
+    	}
+    	int count=userMenu.size();
+    	Assert.assertEquals(count, expected);
+    }
     
 }
