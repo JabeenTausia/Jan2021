@@ -44,7 +44,7 @@ public class HomePageUserMenuTest extends TrainingBaseTest {
 	}
 
 	// Select user menu for <username> drop down
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 1, enabled = true)
 	public void tc05_validateUserMenuList() {
 		loginToApp("jab@tek.com", "Testing@1");
 		homePage.userMenuList(5);
@@ -52,15 +52,15 @@ public class HomePageUserMenuTest extends TrainingBaseTest {
 	}
 
 	// Select "My Profile" option from user menu for <username> drop down
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 1, enabled = true)
 	public void tc06_validateMyProfile() {
 		loginToApp("jab@tek.com", "Testing@1");
-		homePage.clickAbout("test1");
+		homePage.clickAbout("test2");
 
 	}
 
 	// Select "My Profile" and validate Post
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 1, enabled = true)
 	public void tc06_validateMyProfilePost() throws InterruptedException {
 		loginToApp("jab@tek.com", "Testing@1");
 		homePage.userPost("hello world 1");
@@ -68,7 +68,7 @@ public class HomePageUserMenuTest extends TrainingBaseTest {
 	}
 	
 	// Select "Logout" option from user menu
-		@Test(priority = 1, enabled = false)
+		@Test(priority = 1, enabled = true)
 		public void tc09_validateLogOut() throws InterruptedException {
 			loginToApp("jab@tek.com", "Testing@1");
 			homePage.logOut();

@@ -16,14 +16,14 @@ import org.testng.annotations.Parameters;
 
 import com.training.base.TrainingBasePage;
 import com.training.base.TrainingBaseTest;
-import com.training.pages.login.AccountsPage;
 import com.training.pages.login.HomePage;
 import com.training.pages.login.LoginPage;
+import com.training.pages.login.OpportunityPage;
 import com.training.utilities.CommonUtilities;
 
-public class AccountsTest extends TrainingBaseTest {
-
-	public AccountsTest() {
+public class OpportunityTest extends TrainingBaseTest {
+	
+	public OpportunityTest(){
 		super();
 	}
 
@@ -33,7 +33,7 @@ public class AccountsTest extends TrainingBaseTest {
 	LoginPage login;
 	HomePage homePage;
 	TrainingBasePage basePage;
-	AccountsPage accountPage;
+	OpportunityPage oppPage;
 
 	@BeforeMethod
 	@Parameters({ "BrowserName" })
@@ -43,34 +43,25 @@ public class AccountsTest extends TrainingBaseTest {
 		driver.get(url);
 		login = new LoginPage(driver);
 		homePage = new HomePage(driver);
-		accountPage = new AccountsPage(driver);
+		oppPage= new OpportunityPage(driver);
 	}
 
-	// Create an Account
-	@Test(enabled = true)
-	public void tc10_validateCreateAccount() throws InterruptedException {
+	
+	// opportunities drop down
+	@Test(enabled = false)
+	public void tc15_validateOpportunitiesDrpDown() throws InterruptedException {
 		loginToApp("jab@tek.com", "Testing@1");
-		accountPage.createAccount("Testing9", "Technology Partner", "High");
-		accountPage.verifyAccountCreation("Testing9", "Technology Partner", "High");
-
-	}
-
-	// create a new view
-	@Test(enabled = true)
-	public void tc11_validateNewView() throws InterruptedException {
-		loginToApp("jab@tek.com", "Testing@1");
-		accountPage.createView("Anya15");
-		accountPage.verifyNewViewCreated("Anya15");
+		oppPage.opportunityDrpDown();
 
 	}
 	
-	//TC 13 Merge accounts
-	@Test(enabled = true)
-	public void tc13_validateMergeAcc() throws InterruptedException {
-		loginToApp("jab@tek.com", "Testing@1");
-		accountPage.searchAccount("Test");
-		accountPage.mergeAcc();
-		
-	}
+	// Test Opportunity Pipeline Report
+		@Test(enabled = true)
+		public void tc17_validateOpportunitiesPipelinePage() throws InterruptedException {
+			loginToApp("jab@tek.com", "Testing@1");
+			oppPage.pipeLineReports();
+
+		}
+	
 
 }

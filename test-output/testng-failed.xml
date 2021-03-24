@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression Suite]">
+<suite name="Failed suite [Regression Suite]" guice-stage="DEVELOPMENT">
   <test name="SaleforceTests(failed)">
     <parameter name="BrowserName" value="chrome"/>
     <classes>
-      <class name="com.salesforce.testcases.AccountsTest">
+      <class name="com.salesforce.testcases.LoginTest">
         <methods>
-          <include name="tc10_validateCreateAccount"/>
           <include name="beforeTest"/>
           <include name="afterSuite"/>
+          <include name="tc02_loginintosalesandvalidatePageTitle"/>
         </methods>
-      </class> <!-- com.salesforce.testcases.AccountsTest -->
+      </class> <!-- com.salesforce.testcases.LoginTest -->
     </classes>
   </test> <!-- SaleforceTests(failed) -->
 </suite> <!-- Failed suite [Regression Suite] -->

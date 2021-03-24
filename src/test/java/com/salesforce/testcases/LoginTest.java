@@ -43,7 +43,7 @@ public class LoginTest extends TrainingBaseTest {
 		homePage = new HomePage(driver);
 	}
 
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 5, enabled = true)
 	public void loginintosalesandsetup() throws InterruptedException {
 		login.enterIntoUsername("jab@tek.com");
 		login.enterIntoPassword("Testing@1");
@@ -54,7 +54,7 @@ public class LoginTest extends TrainingBaseTest {
 	}
 
 	// Login Error Message - 1
-	@Test(enabled = false)
+	@Test(priority = 1, enabled = true)
 	public void tc01_validateErrorLoginScreen() throws InterruptedException {
 		login.enterIntoUsername("jab@tek.com");
 		login.validateErrorMessage("Please enter your password.");
@@ -62,7 +62,7 @@ public class LoginTest extends TrainingBaseTest {
 	}
 	
 	// Login To SalesForce -2
-		@Test(priority = 1, enabled = false)
+		@Test(priority = 2, enabled = true)
 		public void tc02_loginintosalesandvalidatePageTitle() throws InterruptedException {
 			login.enterIntoUsername("jab@tek.com");
 			login.enterIntoPassword("Testing@1");
@@ -72,7 +72,7 @@ public class LoginTest extends TrainingBaseTest {
 
 
 	// Check RemeberMe - 3
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 3, enabled = false)
 	public void tc03_validateRememberMe() throws InterruptedException {
 		login.enterIntoUsername("jab@tek.com");
 		login.enterIntoPassword("Testing@1");
@@ -85,7 +85,7 @@ public class LoginTest extends TrainingBaseTest {
 	}
 
 	// Forgot Password-wrong password- 4 B
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 4, enabled = true)
 	public void tc04_forgotPassError() throws InterruptedException {
 		login.enterIntoUsername("he234@tek.com");
 		login.wrongPassErrorMessage(

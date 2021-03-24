@@ -32,6 +32,7 @@ public class TrainingBaseTest {
 			ChromeOptions chromeOptions = new ChromeOptions();
 			chromeOptions.addArguments("--disable-notifications");
 			driver = new ChromeDriver(chromeOptions);
+			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		} else if (browsername.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();

@@ -24,21 +24,21 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
-          <img class="collapse-all-icon" src="collapseall.gif">
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Regression_Suite">
-              <span class="suite-name border-passed">Regression Suite</span>
+            <a href="#" panel-name="suite-Regression_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Regression Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Regression_Suite">
+                  <a href="#" panel-name="test-xml-Regression_Suite" class="navigator-link ">
                     <span>RegressionSuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Regression_Suite">
+                  <a href="#" panel-name="testlist-Regression_Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Regression_Suite">
+                  <a href="#" panel-name="group-Regression_Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Regression_Suite">
+                  <a href="#" panel-name="times-Regression_Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Regression_Suite">
+                  <a href="#" panel-name="reporter-Regression_Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Regression_Suite">
+                  <a href="#" panel-name="ignored-methods-Regression_Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Regression_Suite">
+                  <a href="#" panel-name="chronological-Regression_Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Regression_Suite" class="hide-methods failed suite-Regression_Suite"> (hide)</a> <!-- hide-methods failed suite-Regression_Suite -->
+                      <a href="#" panel-name="suite-Regression_Suite" class="show-methods failed suite-Regression_Suite"> (show)</a> <!-- show-methods failed suite-Regression_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Regression_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="com.salesforce.testcases.LoginTest" class="method navigator-link" hash-for-method="tc02_loginintosalesandvalidatePageTitle">tc02_loginintosalesandvalidatePageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Regression_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,8 +115,18 @@
                     </span>
                     <div class="method-list-content passed suite-Regression_Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Suite" title="com.salesforce.testcases.AccountsTest" hash-for-method="tc10_validateCreateAccount">tc10_validateCreateAccount</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="com.salesforce.testcases.LoginTest" class="method navigator-link" hash-for-method="loginintosalesandsetup">loginintosalesandsetup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="com.salesforce.testcases.LoginTest" class="method navigator-link" hash-for-method="tc01_validateErrorLoginScreen">tc01_validateErrorLoginScreen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="com.salesforce.testcases.LoginTest" class="method navigator-link" hash-for-method="tc04_forgotPassError">tc04_forgotPassError</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Regression_Suite -->
@@ -117,17 +141,51 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Regression_Suite" class="panel Regression_Suite">
-          <div class="suite-Regression_Suite-class-passed">
+          <div class="suite-Regression_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.salesforce.testcases.AccountsTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.salesforce.testcases.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tc10_validateCreateAccount">
-                  </a> <!-- tc10_validateCreateAccount -->
-                  <span class="method-name">tc10_validateCreateAccount</span>
+                  <a name="tc02_loginintosalesandvalidatePageTitle">
+                  </a> <!-- tc02_loginintosalesandvalidatePageTitle -->
+                  <span class="method-name">tc02_loginintosalesandvalidatePageTitle</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Home Page ~ Salesforce - Developer Edition] but found []
+	at com.training.base.TrainingBasePage.verifyTitle(TrainingBasePage.java:72)
+	at com.salesforce.testcases.LoginTest.tc02_loginintosalesandvalidatePageTitle(LoginTest.java:70)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Suite-class-failed -->
+          <div class="suite-Regression_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.salesforce.testcases.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginintosalesandsetup">
+                  </a> <!-- loginintosalesandsetup -->
+                  <span class="method-name">loginintosalesandsetup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc01_validateErrorLoginScreen">
+                  </a> <!-- tc01_validateErrorLoginScreen -->
+                  <span class="method-name">tc01_validateErrorLoginScreen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc04_forgotPassError">
+                  </a> <!-- tc04_forgotPassError -->
+                  <span class="method-name">tc04_forgotPassError</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,17 +193,17 @@
         </div> <!-- panel Regression_Suite -->
         <div panel-name="test-xml-Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/jabeentausia/Downloads/jantwentyonenew/resources/suites/RegressionSuite.xml</span>
+            <span class="header-content">/Users/jabeentausia/Documents/javaprojs/Jan2021/resources/suites/RegressionSuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Regression Suite&quot;&gt;
+&lt;suite name=&quot;Regression Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test name=&quot;SaleforceTests&quot;&gt;
     &lt;parameter name=&quot;BrowserName&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.salesforce.testcases.AccountsTest&quot;/&gt;
+      &lt;class name=&quot;com.salesforce.testcases.LoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- SaleforceTests --&gt;
 &lt;/suite&gt; &lt;!-- Regression Suite --&gt;
@@ -185,16 +243,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'tc10_validateCreateAccount')
-data.setCell(0, 2, 'com.salesforce.testcases.AccountsTest')
-data.setCell(0, 3, 13523);
+data.setCell(0, 1, 'loginintosalesandsetup')
+data.setCell(0, 2, 'com.salesforce.testcases.LoginTest')
+data.setCell(0, 3, 10351);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'tc04_forgotPassError')
+data.setCell(1, 2, 'com.salesforce.testcases.LoginTest')
+data.setCell(1, 3, 5750);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'tc02_loginintosalesandvalidatePageTitle')
+data.setCell(2, 2, 'com.salesforce.testcases.LoginTest')
+data.setCell(2, 3, 4763);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'tc01_validateErrorLoginScreen')
+data.setCell(3, 2, 'com.salesforce.testcases.LoginTest')
+data.setCell(3, 3, 1222);
 window.suiteTableData['Regression_Suite']= { tableData: data, tableDiv: 'times-div-Regression_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
               <div id="times-div-Regression_Suite">
               </div> <!-- times-div-Regression_Suite -->
             </div> <!-- times-div -->
@@ -209,9 +279,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Regression_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.salesforce.testcases.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tc03_validateRememberMe</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Regression_Suite" class="panel">
@@ -220,18 +297,56 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.salesforce.testcases.AccountsTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.salesforce.testcases.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">tc10_validateCreateAccount</span>
-                <span class="method-start">3332 ms</span>
+                <span class="method-name">tc01_validateErrorLoginScreen</span>
+                <span class="method-start">6013 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">16858 ms</span>
+                <span class="method-start">7239 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeTest(chrome)</span>
+                <span class="method-start">7360 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tc02_loginintosalesandvalidatePageTitle</span>
+                <span class="method-start">10907 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">15674 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeTest(chrome)</span>
+                <span class="method-start">15814 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc04_forgotPassError</span>
+                <span class="method-start">19864 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">25618 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeTest(chrome)</span>
+                <span class="method-start">25757 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginintosalesandsetup</span>
+                <span class="method-start">29368 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">39723 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

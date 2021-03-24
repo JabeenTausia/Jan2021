@@ -6,7 +6,7 @@
 		<classes>
 			
 	
-			<class name="com.salesforce.testcases.AccountsTest" />
+			<class name="com.salesforce.testcases.LoginTest" />
 		</classes>
 	</test>
 </suite>
